@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title class="i18n" name="user.home"></title>
+  <style type="text/css">
+    input, textarea, button, div {
+      width: 200px;
+      margin: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <select id="language" style="margin-left: 260px;">
+    <option value="zh_CN">中文简体</option>
+    <option value="en_US">English</option>
+    <option value="de_DE">Deutsch</option>
+    <option value="ar_AE">عربي</option>
+  </select>
+
+  <!-- 普通标签用法 class + name -->
+  <div class="i18n" name="user.home"></div>
+  <div class="i18n" name="user.contact"></div>
+                      
+
+  <!-- input用法 class + selectname +  selectattr-->
+  <input type="text" class="i18n-input" selectname="input.name" selectattr="placeholder" name="name" /><br>            
+  <input type="text" class="i18n-input" selectname="input.phone" selectattr="placeholder" name="number" /><br>        
+  <textarea class="i18n-input" selectname="input.message" selectattr="placeholder"></textarea><br> 
+  <button class="submit_bt i18n" name="input.submit"></button> 
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.i18n.js"></script>
+<script src="js/language.js"></script>
+</body>
+</html>
